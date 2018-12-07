@@ -14,8 +14,9 @@ class NumberFormatter
             return number_format($number,2,'.',' ');
         } else {
             $whole = floor($number);
-            if($number-$whole < 0.005)
+            if($number-$whole < 0.005){
                 return number_format($number,0,'.',' ');
+            }
             else {
                 return number_format($number, 2, '.', ' ');
             }
